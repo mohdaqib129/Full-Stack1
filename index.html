@@ -2,12 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Image Map</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello every one</h1>
-    <p>Hello my self aqib rehman ,i am from lakhimpur kheri utter pradesh ,i am pursuing b.tech from gla university</p>
-    <h2>my name is aqib</h2>
+    <center><img src="images/navbar.png" alt="Nab-bar-image" width="1050" usemap="#nav-img"></center>
+    <map id="#nav-img" name="nav-img">
+        <area shape="rect" coords="1,4,109,74" href="home.html">
+        <area shape="rect" coords="110,4,265,74" href="p1.html">
+        <area shape="rect" coords="275,4,475,74" href="p2.html">
+        <area shape="rect" coords="475,4,670,74" href="p3.html">
+        <area shape="rect" coords="670,4,860,74" href="p4.html">
+        <area shape="rect" coords="860,4,1050,74" href="index.html">
+    </map>
+    <h1>Introduction to Front-End Technologies</h1>
+    <center><img src="images/img.jpg" height="400" width="400" usemap="#map1"/></center>
+    <map id="map1" name="map1">
+        <area href="HTML.html" shape="rect" coords="19,7,171,187">
+        <area href="pcss.html" shape="circle" coords="288,97,94">
+        <area href="js.html" shape="rect" coords="23,225,170,385">
+        <area href="b.html" shape="poly" coords="231,254,288,230,346,253,337,340,287,370,240,350">
+    </map>
+    <p>Click on any part of logo to know more about these technologies.</p>
 </body>
 </html>
